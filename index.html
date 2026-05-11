@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Portofolio profesional Fadel Muhammad, Front-End Developer, Atlet Atletik, dan Top 10 Abang Millenia 2025. Pengembang Fadel AI & Fadel Autocare.">
-    <meta name="keywords" content="Fadel Muhammad, Fadel Muhammad Developer, Atlet Atletik Bekasi, Abang Millenia 2025, MA Plus RMB, Paskibra Bekasi, Fadel AI, Web Developer Cibitung">
+    <!-- SEO ENGINE OPTIMIZATION (FULL STACK) -->
+    <title>Fadel Muhammad | Profil Lengkap Developer & Atlet MA Plus RMB</title>
+    <meta name="description" content="Biografi lengkap Fadel Muhammad: Front-End Developer, Atlet Atletik Bekasi, Top 10 Abang Millenia 2025, dan Siswa MA Plus RMB (Roudhotul Muhibbin Bekasi). Tinggal di Cibitung.">
+    <meta name="keywords" content="Fadel Muhammad, Fadel Muhammad MA RMB, Roudhotul Muhibbin Bekasi, Developer Cibitung, Fadel AI, Fadel TikTok Downloader, Fadel Autocare, Abang Millenia 2025, Atlet Atletik Bekasi, Paskibra Bekasi, Fadel Muhammad Pedia">
     <meta name="author" content="Fadel Muhammad">
-    
-    <title>Fadel Muhammad | Dev, Athlete & Achievement Enthusiast</title>
 
+    <!-- JSON-LD Structured Data untuk Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Fadel Muhammad",
-      "jobTitle": "Front-End Developer",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Cibitung",
-        "addressRegion": "Bekasi"
-      },
+      "jobTitle": "Front-End Developer & Athlete",
+      "homeLocation": "Cibitung, Bekasi",
       "alumniOf": {
         "@type": "EducationalOrganization",
-        "name": "MA Plus RMB"
+        "name": "MA Plus RMB (Roudhotul Muhibbin Bekasi)"
       },
-      "knowsAbout": ["Web Development", "Athletics", "Leadership"],
-      "award": ["Top 10 Abang Millenia 2025", "Anggota Paskibra 17 Agustus", "Atlet Atletik"],
-      "url": "https://fadel-dev-portofolio.vercel.app/"
+      "award": [
+        "Top 10 Abang Millenia 2025", 
+        "Atlet Atletik Bekasi", 
+        "Anggota Paskibra 17 Agustus"
+      ],
+      "knowsAbout": ["Web Development", "UI/UX Design", "React", "Athletics"]
     }
     </script>
     
@@ -44,128 +44,47 @@
             --fire-outer: #ff4500;
             --star-gold: #ffcc00;
             --nav-bg: rgba(15, 0, 0, 0.9); 
-            --online-green: #00ff00;
             --atlet-blue: #00d2ff;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; line-height: 1.6; }
 
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        /* --- ANIMASI --- */
         @keyframes rgb-inferno {
             0% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
             50% { border-color: #ff8c00; box-shadow: 0 0 20px #ff8c00; }
             100% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
         }
 
-        @keyframes rgb-text-inferno {
-            0% { color: #ff0000; text-shadow: 0 0 15px #ff0000; }
-            50% { color: #ff8c00; text-shadow: 0 0 20px #ff8c00; }
-            100% { color: #ff0000; text-shadow: 0 0 15px #ff0000; }
+        @keyframes text-glow {
+            0% { text-shadow: 0 0 10px #ff0000; }
+            50% { text-shadow: 0 0 20px #ff8c00; }
+            100% { text-shadow: 0 0 10px #ff0000; }
         }
 
-        /* --- NAVBAR --- */
-        .navbar {
-            position: fixed;
-            top: 0; width: 100%;
-            padding: 15px 6%;
-            background: var(--nav-bg);
-            backdrop-filter: blur(12px);
-            display: flex; justify-content: space-between; align-items: center;
-            z-index: 1000;
-            border-bottom: 2px solid var(--lava);
-        }
-
+        .navbar { position: fixed; top: 0; width: 100%; padding: 15px 6%; background: var(--nav-bg); backdrop-filter: blur(12px); display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 2px solid var(--lava); }
         .nav-logo { font-size: 1.5rem; font-weight: 800; color: var(--text); text-decoration: none; }
         .nav-links { display: flex; gap: 25px; align-items: center; }
         .nav-links a { text-decoration: none; color: #fff; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
 
-        /* --- HERO --- */
-        .hero {
-            min-height: 100vh;
-            display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-            text-align: center; padding: 120px 20px;
-        }
-
+        .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 20px; }
         .badges-container { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center; }
+        .achievement-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 204, 0, 0.1); border: 1px solid var(--star-gold); color: var(--star-gold); padding: 5px 15px; border-radius: 50px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; }
+        .atlet-badge { background: rgba(0, 210, 255, 0.1); border: 1px solid var(--atlet-blue); color: var(--atlet-blue); }
 
-        .achievement-badge {
-            display: inline-flex; align-items: center; gap: 8px;
-            background: rgba(255, 204, 0, 0.1);
-            border: 1px solid var(--star-gold);
-            color: var(--star-gold);
-            padding: 5px 15px; border-radius: 50px;
-            font-size: 0.7rem; font-weight: 800;
-            text-transform: uppercase;
-        }
-
-        .atlet-badge {
-            background: rgba(0, 210, 255, 0.1);
-            border: 1px solid var(--atlet-blue);
-            color: var(--atlet-blue);
-        }
-
-        .profile-box {
-            width: 200px; height: 200px;
-            padding: 6px; border-radius: 20px;
-            border: 4px solid; 
-            animation: rgb-inferno 3s infinite ease-in-out;
-            background: #000; margin-bottom: 25px;
-        }
+        .profile-box { width: 220px; height: 220px; padding: 6px; border-radius: 20px; border: 4px solid; animation: rgb-inferno 3s infinite ease-in-out; background: #000; margin-bottom: 25px; }
         .profile-img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
 
-        .burn-title {
-            font-size: clamp(2.2rem, 8vw, 4rem); font-weight: 900;
-            animation: rgb-text-inferno 3s infinite ease-in-out;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .description-text {
-            color: rgba(255,255,255,0.9);
-            max-width: 750px;
-            font-size: 1.05rem;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .highlight { color: var(--lava); font-weight: 800; }
-        .highlight-blue { color: var(--atlet-blue); font-weight: 800; }
-
-        .ai-container {
-            width: 100%; max-width: 600px; height: 450px;
-            background: var(--card); border: 2px solid var(--lava);
-            border-radius: 15px; overflow: hidden; box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
-        }
-        .ai-iframe { width: 100%; height: 100%; border: none; }
+        .burn-title { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; animation: text-glow 3s infinite; margin-bottom: 10px; text-transform: uppercase; color: #fff; }
 
         .section-box { padding: 80px 6%; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-
-        .card {
-            background: var(--card); padding: 30px; border-radius: 15px;
-            border: 2px solid; animation: rgb-inferno 4s infinite ease-in-out;
-            text-align: center;
-        }
-
-        .fire-btn {
-            padding: 12px 25px; background: linear-gradient(90deg, var(--lava), var(--fire-outer));
-            color: white; font-weight: 800; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px;
-        }
-
-        footer { text-align: center; padding: 40px; opacity: 0.6; border-top: 1px solid rgba(255,0,0,0.2); }
-
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-        }
+        .card { background: var(--card); padding: 30px; border-radius: 15px; border: 2px solid var(--lava); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); background: rgba(50, 0, 0, 0.9); }
+        
+        .fire-btn { padding: 12px 25px; background: linear-gradient(90deg, var(--lava), var(--fire-outer)); color: white; font-weight: 800; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px; font-size: 0.8rem; }
+        
+        footer { text-align: center; padding: 40px; background: #000; border-top: 2px solid var(--lava); }
     </style>
 </head>
 <body>
@@ -174,7 +93,7 @@
         <a href="#" class="nav-logo">FADEL MUHAMMAD</a>
         <div class="nav-links">
             <a href="#home">Home</a>
-            <a href="#skills">Skill</a>
+            <a href="#achievements">Prestasi</a>
             <a href="#work">Project</a>
             <a href="https://instagram.com/fadell__muhammad" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
@@ -182,70 +101,82 @@
 
     <section class="hero" id="home">
         <div class="badges-container reveal-top">
-            <div class="achievement-badge"><i class="fas fa-trophy"></i> Top 10 Abang Millenia 2025</div>
+            <div class="achievement-badge"><i class="fas fa-medal"></i> Top 10 Abang Millenia 2025</div>
             <div class="achievement-badge atlet-badge"><i class="fas fa-running"></i> Atlet Atletik</div>
-            <div class="achievement-badge" style="border-color: #fff; color: #fff;"><i class="fas fa-flag"></i> Paskibra</div>
+            <div class="achievement-badge" style="border-color: #fff; color: #fff;"><i class="fas fa-university"></i> MA Plus RMB</div>
         </div>
 
         <div class="profile-box reveal-left">
-            <img src="Gemini_Generated_Image_550eml550eml550e.png" alt="Fadel Muhammad Profile" class="profile-img">
+            <!-- Ganti src dengan foto profil aslimu -->
+            <img src="https://via.placeholder.com/220" alt="Fadel Muhammad MA Plus RMB" class="profile-img">
         </div>
 
         <h1 class="burn-title reveal-right">FADEL MUHAMMAD</h1>
-        
-        <p class="description-text reveal-bottom">
-            Seorang <span class="highlight">Front-End Developer</span> profesional dan <span class="highlight-blue">Atlet Atletik</span> yang berbasis di Cibitung, Bekasi. 
-            Saat ini saya sedang menempuh pendidikan di <span class="highlight">MA Plus RMB</span>. Saya berfokus pada pengembangan teknologi inovatif seperti 
-            <strong>Fadel AI</strong>, <strong>Fadel Autocare</strong>, hingga <strong>Fadel TikTok Downloader</strong>.
-            <br><br>
-            Kombinasi antara disiplin atletik dan kreativitas digital membentuk karakter saya sebagai individu yang berprestasi, terbukti sebagai <span class="highlight">Top 10 Abang Millenia 2025</span> 
-            dan dedikasi sebagai anggota <span class="highlight">Paskibra 17 Agustus</span>.
+        <p style="max-width: 850px; margin-bottom: 30px;" class="reveal-bottom">
+            Seorang <strong>Front-End Developer</strong>, <strong>Atlet Atletik</strong>, dan pelajar berprestasi dari <strong>MA Plus RMB (Roudhotul Muhibbin Bekasi)</strong>. Berdomisili di <strong>Wanasari, Cibitung</strong>, Bekasi. Menggabungkan disiplin fisik dengan inovasi teknologi masa depan.
         </p>
-
-        <div class="ai-container reveal-bottom">
-            <iframe src="https://fadel-ai-smart.vercel.app/" class="ai-iframe"></iframe>
-        </div>
     </section>
 
-    <section class="section-box" id="skills">
-        <h2 style="text-align:center; margin-bottom: 50px;">MY <span style="color:var(--lava)">EXPERTISE</span></h2>
+    <!-- SECTION PRESTASI LENGKAP -->
+    <section class="section-box" id="achievements">
+        <h2 style="text-align:center; margin-bottom: 50px;">HISTORY & <span style="color:var(--lava)">ACHIEVEMENTS</span></h2>
         <div class="grid">
             <div class="card reveal-left">
-                <i class="fas fa-code" style="font-size: 2rem; color: var(--lava);"></i>
-                <h3 style="margin-top:15px;">Web Development</h3>
-                <p>HTML, CSS, JS, React Native</p>
+                <i class="fas fa-award" style="font-size: 2.5rem; color: var(--star-gold);"></i>
+                <h3 style="margin-top:15px;">Top 10 Abang Millenia 2025</h3>
+                <p>Terpilih sebagai salah satu finalis terbaik dalam ajang pemilihan duta bakat muda <strong>Abang Millenia 2025</strong>.</p>
             </div>
             <div class="card reveal-bottom">
-                <i class="fas fa-running" style="font-size: 2rem; color: var(--atlet-blue);"></i>
-                <h3 style="margin-top:15px;">Athletics</h3>
-                <p>Disiplin, Ketahanan, & Kecepatan</p>
+                <i class="fas fa-running" style="font-size: 2.5rem; color: var(--atlet-blue);"></i>
+                <h3 style="margin-top:15px;">Atlet Atletik Bekasi</h3>
+                <p>Aktif berkompetisi di cabang olahraga atletik, membawa semangat kompetitif ke dalam dunia koding.</p>
             </div>
             <div class="card reveal-right">
-                <i class="fas fa-users" style="font-size: 2rem; color: var(--star-gold);"></i>
-                <h3 style="margin-top:15px;">Leadership</h3>
-                <p>Paskibra & Abang Millenia</p>
+                <i class="fas fa-users-cog" style="font-size: 2.5rem; color: #fff;"></i>
+                <h3 style="margin-top:15px;">Paskibra & Kepemimpinan</h3>
+                <p>Anggota <strong>Paskibra 17 Agustus</strong>, menanamkan nilai disiplin tinggi dan kerjasama tim nasionalis.</p>
+            </div>
+            <div class="card reveal-left">
+                <i class="fas fa-school" style="font-size: 2.5rem; color: var(--lava);"></i>
+                <h3 style="margin-top:15px;">Siswa MA Plus RMB</h3>
+                <p>Aktif menempuh pendidikan di <strong>MA Plus Roudhotul Muhibbin Bekasi</strong> dengan fokus pada teknologi.</p>
             </div>
         </div>
     </section>
 
-    <section class="section-box" id="work">
-        <h2 style="text-align:center; margin-bottom: 50px;">FEATURED <span style="color:var(--lava)">WORKS</span></h2>
+    <!-- SECTION PROJECT LENGKAP -->
+    <section class="section-box" id="work" style="background: rgba(15,0,0,0.8);">
+        <h2 style="text-align:center; margin-bottom: 50px;">FEATURED <span style="color:var(--lava)">PROJECTS</span></h2>
         <div class="grid">
             <div class="card reveal-left">
-                <h3>Fadel AI</h3>
-                <p>Smart Assistant Interface</p>
+                <h3 style="color: var(--lava);">Fadel AI</h3>
+                <p>Interface Smart Assistant yang mengintegrasikan API kecerdasan buatan dengan UI modern.</p>
                 <a href="https://fadel-ai-smart.vercel.app/" target="_blank" class="fire-btn">BUKA PROJECT</a>
             </div>
+            <div class="card reveal-bottom">
+                <h3 style="color: var(--lava);">Fadel TikTok Downloader</h3>
+                <p>Alat pengunduh video TikTok tanpa watermark yang cepat, stabil, dan responsif.</p>
+                <a href="#" class="fire-btn">BUKA PROJECT</a>
+            </div>
             <div class="card reveal-right">
-                <h3>Fadel Autocare</h3>
-                <p>Management Service System</p>
+                <h3 style="color: var(--lava);">Fadel Autocare</h3>
+                <p>Sistem manajemen kendaraan: Cek tekanan ban, rekomendasi bensin, dan jadwal oli digital.</p>
+                <a href="#" class="fire-btn">BUKA PROJECT</a>
+            </div>
+            <div class="card reveal-left">
+                <h3 style="color: var(--star-gold);">Fadel Pedia</h3>
+                <p>Platform layanan top-up game dan produk digital dengan branding profesional.</p>
                 <a href="#" class="fire-btn">BUKA PROJECT</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Fadel Muhammad | Developer & Athlete</p>
+        <p>&copy; 2026 Fadel Muhammad | Developer - Athlete - MA Plus RMB</p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">Cibitung, Bekasi, Jawa Barat</p>
+        <div style="margin-top: 15px;">
+            <a href="https://instagram.com/fadell__muhammad" target="_blank" style="color: white; font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
 
     <script>
